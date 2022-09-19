@@ -13,7 +13,7 @@ function TopMenu() {
           </li>
 
           <li>
-            <NavLink to={"/cavities"} >Gaatjes</NavLink>
+            <NavLink to={"/cavities"} activeClassName={"active-link"}>Gaatjes</NavLink>
           </li>
 
           <li>
