@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink, useHistory} from "react-router-dom";
 
 function TopMenu() {
   return (
@@ -8,19 +9,19 @@ function TopMenu() {
 
         <ul>
           <li>
-            Home
+            <NavLink exact to={"/"} activeClassName={"active-link"}>Home</NavLink>
           </li>
 
           <li>
-            Gaatjes
+            <NavLink to={"/cavities"} >Gaatjes</NavLink>
           </li>
 
           <li>
-            Afspraak maken
+            <NavLink to={"/appointments"} activeClassName={"active-link"}>Afspraak maken</NavLink>
           </li>
 
           <li>
-            Tanden bleken
+            <NavLink to={"/whitening"} activeClassName={"active-link"}>Tanden bleken</NavLink>
           </li>
         </ul>
       </div>

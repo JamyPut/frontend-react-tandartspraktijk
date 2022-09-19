@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader';
 import logo from '../assets/toothbrushes.svg';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 function HomePage() {
   return (
